@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Hello from './Hello'
+import Card from './Card';
+import Header from './Header';
 
-function TextLinkExample() {
+function App() {
   return (
     <>
-    <div>  
+    <div className='App'>  
     
   <Navbar className="bg-body-tertiary">
       <Container>
@@ -18,10 +19,12 @@ function TextLinkExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <Hello/>
+
+    <Card/>
+    <Header/>
     </div>        
 </>
 
   );
 }
-export default TextLinkExample;
+export default App;
